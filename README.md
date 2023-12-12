@@ -2,7 +2,7 @@
 
 Adaptation of the [Emission](https://github.com/MoodMinds/emission)'s `Emittable` and
 [Traverse Streams Traversable](https://github.com/MoodMinds/traverse-streams-traversable)'s `Traversable`
-in Spring's `RequestMappingHandlerAdapter` for use as return type in @RestController in Servlet non-reactive context.
+in Spring's `RequestMappingHandlerAdapter` for handling as return values in @RestController in Servlet non-reactive context.
 
 ## Key Notes
 
