@@ -1,6 +1,6 @@
 # Contribution Guidelines
 
-Thank you for your interest in contributing to Emission Spring Web MVC!
+Thank you for your interest in contributing to **Emission Spring Web MVC**!
 
 **Project Status: Experimental and Under Development**
 
