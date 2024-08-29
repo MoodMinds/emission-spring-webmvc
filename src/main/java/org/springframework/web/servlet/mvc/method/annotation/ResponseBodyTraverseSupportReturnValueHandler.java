@@ -47,6 +47,7 @@ import static java.util.Objects.requireNonNull;
 import static java.util.Optional.ofNullable;
 import static java.util.stream.Collectors.toList;
 import static org.moodminds.traverse.TakeTraversable.take;
+import static org.moodminds.traverse.Traversable.each;
 import static org.springframework.core.ResolvableType.forMethodParameter;
 import static org.springframework.http.MediaType.*;
 import static org.springframework.web.context.request.RequestAttributes.SCOPE_REQUEST;
@@ -212,7 +213,7 @@ public class ResponseBodyTraverseSupportReturnValueHandler implements HandlerMet
             emitter.onError(emitter::completeWithError);
             taskExecutor.execute(() -> {
                 try {
-                    take(traverseSupport, not(stop::get)).traverse(traverser -> traverser.each(value -> {
+                    take(traverseSupport, not(stop::get)).traverse(each(value -> {
                         try {
                             emit(value);
                         } catch (Throwable ex) {
